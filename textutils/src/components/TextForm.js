@@ -37,14 +37,9 @@ export default function TextForm(props) {
         props.showAlert("Converted To CapitaliseCase","success");
     }
     const Copytxt = () =>
-    {
-         
-        var cptext = document.getElementById("FormControlTextarea");
-        cptext.select();
-        navigator.clipboard.writeText(cptext.value);
-        document.getSelection().removeAllRanges();
+    {    
+        navigator.clipboard.writeText(text.value);
         props.showAlert("Text Copied","success");
-
     }
     const rmSpaces = () =>
     {
