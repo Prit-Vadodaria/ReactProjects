@@ -38,7 +38,7 @@ export default function TextForm(props) {
     }
     const Copytxt = () =>
     {    
-        navigator.clipboard.writeText(text.value);
+        navigator.clipboard.writeText(text);
         props.showAlert("Text Copied","success");
     }
     const rmSpaces = () =>
