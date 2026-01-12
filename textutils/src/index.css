@@ -1,4 +1,4 @@
-.accordion-button::after 
+.accordion-button.collapsed::after 
 {
     filter: invert(1)
 }
