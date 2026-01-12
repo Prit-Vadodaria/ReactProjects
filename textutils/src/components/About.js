@@ -38,7 +38,7 @@ export default function About(props) {
                   type="button"
                   onClick={() => toggleSection('mission')}
                   aria-expanded={openSection === 'mission'}
-                  style={{color: props.mode === 'light' ? 'black' : 'white', background: props.mode === 'light' ? '#fff' : '#212529'}}
+                  style={{color: props.mode === 'light' ? 'black' : 'white', background: props.mode === 'light' ? '#fff' : '#212529', filter: props.mode === 'light' ? 'invert(0)' : 'invert(1)'}}
                 >
                   Our Mission
                 </button>
@@ -64,7 +64,7 @@ export default function About(props) {
                   type="button"
                   onClick={() => toggleSection('offer')}
                   aria-expanded={openSection === 'offer'}
-                  style={{color: props.mode === 'light' ? 'black' : 'white', background: props.mode === 'light' ? '#fff' : '#212529'}}
+                  style={{color: props.mode === 'light' ? 'black' : 'white', background: props.mode === 'light' ? '#fff' : '#212529', filter: props.mode === 'light' ? 'invert(0)' : 'invert(1)'}}
                 >
                   What We Offer
                 </button>
@@ -89,7 +89,7 @@ export default function About(props) {
                   type="button"
                   onClick={() => toggleSection('choose')}
                   aria-expanded={openSection === 'choose'}
-                  style={{color: props.mode === 'light' ? 'black' : 'white', background: props.mode === 'light' ? '#fff' : '#212529'}}
+                  style={{color: props.mode === 'light' ? 'black' : 'white', background: props.mode === 'light' ? '#fff' : '#212529', filter: props.mode === 'light' ? 'invert(0)' : 'invert(1)'}}
                 >
                   Why Choose Us
                 </button>
