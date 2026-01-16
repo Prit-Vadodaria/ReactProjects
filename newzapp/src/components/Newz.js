@@ -5,9 +5,20 @@ export class Newz extends Component {
   render() {
     return (
       <>
-        <h1>this is the news componet which will hold news item</h1>
-        <NewsItem/>
-        <NewsItem/>
+        <div className="container my-3">
+          <h1>Top Headlines</h1>
+          <div className="row">
+            <div className="col-md-3">
+              <NewsItem title="mytitle" description="myDesc"/>
+            </div>
+            <div className="col-md-3">
+              <NewsItem title="mytitle" description="myDesc"/>
+            </div>
+            <div className="col-md-3">
+              <NewsItem title="mytitle" description="myDesc"/>
+            </div>
+          </div>
+        </div>
       </>
     )
   }
