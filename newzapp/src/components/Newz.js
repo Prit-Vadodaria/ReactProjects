@@ -3,11 +3,11 @@ import NewsItem from "./NewsItem";
 import ImgNotAvailable from "../ImgNotAvailable.jpg"
 
 export class Newz extends Component {
-  article = [];
+  
   constructor() {
     super();
     this.state = {
-      article: this.article,
+      article: [],
     };
   }
 
