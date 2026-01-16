@@ -9,7 +9,7 @@ export class NewsItem extends Component {
           <img src={imgUrl} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{title.length > 45 ? `${title.slice(0, 44)}...` : title}</h5>
-            <p className="card-text">{description.slice(0,84)}...</p>
+            <p className="card-text">{description.length > 45 ? `${description.slice(0, 44)}...` : description}</p>
             <a href={newsUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
               Read More
             </a>
