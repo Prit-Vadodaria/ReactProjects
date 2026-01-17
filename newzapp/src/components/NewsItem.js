@@ -10,7 +10,7 @@ export class NewsItem extends Component {
           <div className="card-body">
             <h5 className="card-title">{title.length > 45 ? `${title.slice(0, 44)}...` : title}</h5>
             <p className="card-text">{description.length > 45 ? `${description.slice(0, 44)}...` : description}</p>
-            <a href={newsUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
+            <a href={newsUrl} target="_blank" rel="noreferrer" className="btn btn-outline-dark">
               Read More
             </a>
           </div>
