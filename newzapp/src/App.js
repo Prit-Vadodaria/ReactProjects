@@ -5,6 +5,7 @@ import Newz from "./components/Newz";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 export default class App extends Component {
+  pageSize=16
   render() {
     return (
       <>
@@ -17,7 +18,7 @@ export default class App extends Component {
               element={
                 <Newz
                   key="general"
-                  pageSize={10}
+                  pageSize={this.pageSize}
                   country="us"
                   category="general"
                 />
@@ -29,7 +30,7 @@ export default class App extends Component {
               element={
                 <Newz
                   key="business"
-                  pageSize={10}
+                  pageSize={this.pageSize}
                   country="us"
                   category="business"
                 />
@@ -41,7 +42,7 @@ export default class App extends Component {
               element={
                 <Newz
                   key="entertainment"
-                  pageSize={10}
+                  pageSize={this.pageSize}
                   country="us"
                   category="entertainment"
                 />
@@ -53,7 +54,7 @@ export default class App extends Component {
               element={
                 <Newz
                   key="health"
-                  pageSize={10}
+                  pageSize={this.pageSize}
                   country="us"
                   category="health"
                 />
@@ -65,7 +66,7 @@ export default class App extends Component {
               element={
                 <Newz
                   key="science"
-                  pageSize={10}
+                  pageSize={this.pageSize}
                   country="us"
                   category="science"
                 />
@@ -77,7 +78,7 @@ export default class App extends Component {
               element={
                 <Newz
                   key="sports"
-                  pageSize={10}
+                  pageSize={this.pageSize}
                   country="us"
                   category="sports"
                 />
@@ -89,7 +90,7 @@ export default class App extends Component {
               element={
                 <Newz
                   key="technology"
-                  pageSize={10}
+                  pageSize={this.pageSize}
                   country="us"
                   category="technology"
                 />
