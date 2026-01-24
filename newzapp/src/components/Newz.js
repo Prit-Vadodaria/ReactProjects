@@ -19,6 +19,10 @@ export class Newz extends Component {
     category: PropTypes.string,
   };
 
+  capitalizefirstalpha = (string)=> {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -27,6 +31,7 @@ export class Newz extends Component {
       page: 1,
       totalArticles: 0,
     };
+    document.title = `${this.capitalizefirstalpha(this.props.category)} - Newzzz`;
   }
 
   async componentDidMount() {
@@ -68,7 +73,7 @@ export class Newz extends Component {
     return (
       <>
         <div className="container my-3">
-          <h1 style={{ margin: "30px 0px" }}>Top Headlines</h1>
+          <h1 style={{ margin: "30px 0px" }}>Top Headlines - {this.capitalizefirstalpha(this.props.category)}</h1>
           <hr></hr>
           {loading && <Spinner />}
           <div
