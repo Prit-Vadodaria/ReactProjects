@@ -5,7 +5,7 @@ import Newz from "./components/Newz";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 export default class App extends Component {
-  pageSize=16
+  pageSize=5
   render() {
     return (
       <>
