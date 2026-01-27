@@ -5,8 +5,8 @@ import Spinner from "./Spinner";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-const API_KEY = "20d868404aa54bbaa2fc6c2d045d9650";
-const API_URL = "https://newsapi.org/v2/top-headlines";
+const API_KEY = process.env.REACT_APP_NEWZ_API_KEY;
+const API_URL = process.env.REACT_APP_NEWZ_API_URL;
 
 export class Newz extends Component {
   static defaultProps = {
