@@ -1,11 +1,9 @@
-import React, { Component } from "react";
 import { Link } from "react-router";
 
-export default class Navbar extends Component {
-  render() {
+export default function Navbar() {
     return (
       <>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               NewzApp
@@ -77,5 +75,5 @@ export default class Navbar extends Component {
         </nav>
       </>
     );
-  }
+  
 }
